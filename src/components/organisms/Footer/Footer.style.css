@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__text {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.78rem !important;
+  color: rgba(241, 245, 249, 0.2) !important;
+  letter-spacing: 0.04em !important;
+}

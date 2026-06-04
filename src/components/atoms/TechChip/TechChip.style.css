@@ -1,0 +1,27 @@
+.tech-chip {
+  font-family: 'Space Grotesk', sans-serif !important;
+  border-radius: 20px !important;
+  font-size: 0.73rem !important;
+  height: auto !important;
+  padding: 4px 2px !important;
+}
+
+.tech-chip--primary {
+  background: rgba(56, 189, 248, 0.1) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.2) !important;
+}
+
+.tech-chip--muted {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: rgba(241, 245, 249, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.tech-chip--mono {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: rgba(241, 245, 249, 0.38) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.68rem !important;
+  border-radius: 4px !important;
+}

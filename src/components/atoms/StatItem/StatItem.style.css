@@ -1,0 +1,23 @@
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-item__value {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2 !important;
+}
+
+.stat-item__label {
+  font-size: 0.72rem !important;
+  color: rgba(241, 245, 249, 0.38) !important;
+  letter-spacing: 0.04em !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}

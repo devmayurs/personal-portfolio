@@ -1,0 +1,42 @@
+.contact-section {
+  padding: 6rem 0;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.contact-section__intro {
+  max-width: 640px;
+  margin-bottom: 3rem;
+}
+
+.contact-section__body {
+  font-size: clamp(0.95rem, 2vw, 1.15rem) !important;
+  color: rgba(241, 245, 249, 0.5) !important;
+  line-height: 1.85 !important;
+}
+
+.contact-section__body-strong {
+  color: rgba(241, 245, 249, 0.75);
+  font-weight: 600;
+}
+
+.contact-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.contact-section__availability {
+  margin-top: 3rem;
+  display: inline-flex !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.contact-section__availability-text {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.82rem !important;
+  color: #10b981 !important;
+  font-weight: 600 !important;
+}

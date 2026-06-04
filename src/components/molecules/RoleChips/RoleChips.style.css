@@ -1,0 +1,14 @@
+.role-chips {
+  margin-bottom: 1.5rem;
+}
+
+.role-chip {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 0.75rem !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  background: rgba(56, 189, 248, 0.05) !important;
+  color: rgba(241, 245, 249, 0.65) !important;
+  height: auto !important;
+  padding: 4px 2px !important;
+}

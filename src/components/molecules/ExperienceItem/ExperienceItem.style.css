@@ -1,0 +1,88 @@
+.exp-item {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.exp-item__timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.exp-item__dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.exp-item__line {
+  width: 2px;
+  flex: 1;
+  margin-top: 8px;
+}
+
+.exp-item__body {
+  flex: 1;
+}
+
+.exp-item__body--spaced {
+  padding-bottom: 3rem;
+}
+
+.exp-item__meta {
+  margin-bottom: 0.75rem;
+}
+
+.exp-item__company {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  color: #f1f5f9 !important;
+  margin: 0 !important;
+}
+
+.exp-item__role {
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.exp-item__period {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.73rem !important;
+  color: rgba(241, 245, 249, 0.3) !important;
+  margin-left: auto;
+}
+
+.exp-item__points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-item__point {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.exp-item__bullet {
+  margin-top: 3px;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+}
+
+.exp-item__point-text {
+  font-size: 0.875rem !important;
+  color: rgba(241, 245, 249, 0.58) !important;
+  line-height: 1.65 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+}

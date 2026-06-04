@@ -1,0 +1,8 @@
+.experience-section {
+  padding: 6rem 0;
+}
+
+.experience-section__timeline {
+  display: flex;
+  flex-direction: column;
+}

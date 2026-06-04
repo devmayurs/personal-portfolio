@@ -1,0 +1,16 @@
+.projects-section {
+  padding: 6rem 0;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.projects-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 400px) {
+  .projects-section__grid {
+    grid-template-columns: 1fr;
+  }
+}
