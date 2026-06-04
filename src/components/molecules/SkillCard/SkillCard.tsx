@@ -30,7 +30,7 @@ const SkillCard: React.FC<ISkillCardProps> = ({ skill }) => {
             {skill.category}
           </Typography>
         </Box>
-        <Stack sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }} className="skill-card__items">
+        <Stack className="skill-card__items" sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }}>
           {skill.items.map((item) => (
             <TechChip key={item} label={item} variant="muted" />
           ))}

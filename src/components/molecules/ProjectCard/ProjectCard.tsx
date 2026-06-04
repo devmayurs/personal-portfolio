@@ -43,7 +43,7 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project }) => {
           ))}
         </Stack>
 
-        <Stack sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }} className="project-card__tags">
+        <Stack className="project-card__tags" sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }}>
           {project.tags.map((tag) => (
             <TechChip key={tag} label={tag} variant="mono" />
           ))}

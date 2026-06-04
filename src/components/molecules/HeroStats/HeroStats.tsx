@@ -7,9 +7,9 @@ import './HeroStats.style.css';
 const HeroStats: React.FC = () => {
   return (
     <Stack
+      className="hero-stats"
       sx={{
         direction: 'row',
-        className: 'hero-stats',
         flexWrap: 'wrap',
         gap: '2.5rem',
       }}

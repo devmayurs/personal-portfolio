@@ -32,8 +32,8 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({ experience, isLast }) 
       <Box className={`exp-item__body ${isLast ? '' : 'exp-item__body--spaced'}`}>
         <Stack
           direction="row"
-          sx={{ flexWrap: 'wrap', gap: '0.5rem 1rem', alignItems: 'baseline' }}
           className="exp-item__meta"
+          sx={{ flexWrap: 'wrap', gap: '0.5rem 1rem', alignItems: 'baseline' }}
         >
           <Typography variant="h3" className="exp-item__company">
             {experience.company}
