@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Container, Box, Button, Stack } from '@mui/material';
+import { AppBar, Toolbar, Container, Button, Stack } from '@mui/material';
 import NavLink from '../../molecules/NavLink/NavLink';
 import { NAV_LINKS } from '../../../constants/sections';
 import { useScrollTo } from '../../../hooks/useScrollTo';
@@ -14,14 +14,16 @@ const Navbar: React.FC = () => {
       <Container maxWidth="xl">
         <Toolbar className="navbar__toolbar" disableGutters>
           <Button
-            onClick={() => scrollTo(ESection.ABOUT)}
+            onClick={() => {
+              scrollTo(ESection.ABOUT);
+            }}
             className="navbar__logo"
             disableRipple
           >
             MS
           </Button>
 
-          <Stack direction="row" gap="clamp(1rem,3vw,2.5rem)" component="nav" aria-label="Main navigation">
+          <Stack direction="row" sx={{ gap: 'clamp(1rem,3vw,2.5rem)' }} component="nav" aria-label="Main navigation">
             {NAV_LINKS.map((link) => (
               <NavLink key={link.id} link={link} />
             ))}

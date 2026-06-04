@@ -13,10 +13,11 @@ const NavLink: React.FC<INavLinkProps> = ({ link }) => {
   const { scrollTo } = useScrollTo();
   const activeSection = useAppSelector((state) => state.ui.activeSection);
   const isActive = activeSection === link.id;
-
   return (
     <Button
-      onClick={() => scrollTo(link.id)}
+      onClick={() => {
+        scrollTo(link.id);
+      }}
       className={`nav-link ${isActive ? 'nav-link--active' : ''}`}
       disableRipple
     >
