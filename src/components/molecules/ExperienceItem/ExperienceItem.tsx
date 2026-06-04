@@ -30,15 +30,15 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({ experience, isLast }) 
 
       {/* Content */}
       <Box className={`exp-item__body ${isLast ? '' : 'exp-item__body--spaced'}`}>
-        <Stack direction="row" flexWrap="wrap" gap="0.5rem 1rem" alignItems="baseline" className="exp-item__meta">
+        <Stack
+          direction="row"
+          sx={{ flexWrap: 'wrap', gap: '0.5rem 1rem', alignItems: 'baseline' }}
+          className="exp-item__meta"
+        >
           <Typography variant="h3" className="exp-item__company">
             {experience.company}
           </Typography>
-          <Typography
-            component="span"
-            className="exp-item__role"
-            style={{ color: experience.color }}
-          >
+          <Typography component="span" className="exp-item__role" style={{ color: experience.color }}>
             · {experience.role}
           </Typography>
           <Typography variant="caption" className="exp-item__period">
@@ -49,11 +49,7 @@ const ExperienceItem: React.FC<IExperienceItemProps> = ({ experience, isLast }) 
         <Box component="ul" className="exp-item__points">
           {experience.points.map((point) => (
             <Box component="li" key={point} className="exp-item__point">
-              <Typography
-                component="span"
-                className="exp-item__bullet"
-                style={{ color: experience.color }}
-              >
+              <Typography component="span" className="exp-item__bullet" style={{ color: experience.color }}>
                 ▸
               </Typography>
               <Typography component="span" className="exp-item__point-text">

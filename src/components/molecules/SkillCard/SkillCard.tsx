@@ -14,8 +14,12 @@ const SkillCard: React.FC<ISkillCardProps> = ({ skill }) => {
   return (
     <Card
       className={`skill-card ${hovered ? 'skill-card--hovered' : ''}`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseEnter={() => {
+        setHovered(true);
+      }}
+      onMouseLeave={() => {
+        setHovered(false);
+      }}
     >
       <CardContent className="skill-card__content">
         <Box className="skill-card__header">
@@ -26,7 +30,7 @@ const SkillCard: React.FC<ISkillCardProps> = ({ skill }) => {
             {skill.category}
           </Typography>
         </Box>
-        <Stack direction="row" flexWrap="wrap" gap="6px">
+        <Stack sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }} className="skill-card__items">
           {skill.items.map((item) => (
             <TechChip key={item} label={item} variant="muted" />
           ))}

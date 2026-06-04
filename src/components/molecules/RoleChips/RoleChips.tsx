@@ -5,7 +5,7 @@ import './RoleChips.style.css';
 
 const RoleChips: React.FC = () => {
   return (
-    <Stack direction="row" flexWrap="wrap" gap="8px" className="role-chips">
+    <Stack sx={{ direction: 'row', flexWrap: 'wrap', gap: '8px' }} className="role-chips">
       {HERO_ROLES.map((role) => (
         <Chip key={role} label={role} size="small" className="role-chip" />
       ))}

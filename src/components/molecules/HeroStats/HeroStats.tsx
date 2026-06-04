@@ -7,10 +7,12 @@ import './HeroStats.style.css';
 const HeroStats: React.FC = () => {
   return (
     <Stack
-      direction="row"
-      className="hero-stats"
-      flexWrap="wrap"
-      gap="2.5rem"
+      sx={{
+        direction: 'row',
+        className: 'hero-stats',
+        flexWrap: 'wrap',
+        gap: '2.5rem',
+      }}
     >
       {HERO_STATS.map((stat) => (
         <StatItem key={stat.label} stat={stat} />

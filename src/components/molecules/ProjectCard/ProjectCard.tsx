@@ -16,17 +16,19 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project }) => {
   return (
     <Card
       className={`project-card ${hovered ? 'project-card--hovered' : ''}`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseEnter={() => {
+        setHovered(true);
+      }}
+      onMouseLeave={() => {
+        setHovered(false);
+      }}
     >
       <CardContent className="project-card__content">
         <Box className="project-card__header">
           <Typography variant="h3" className="project-card__title">
             {project.title}
           </Typography>
-          <Box
-            className={`project-card__badge project-card__badge--${isLive ? 'live' : 'demo'}`}
-          >
+          <Box className={`project-card__badge project-card__badge--${isLive ? 'live' : 'demo'}`}>
             {isLive ? 'LIVE' : 'PROJECT'}
           </Box>
         </Box>
@@ -35,30 +37,20 @@ const ProjectCard: React.FC<IProjectCardProps> = ({ project }) => {
           {project.description}
         </Typography>
 
-        <Stack direction="row" flexWrap="wrap" gap="6px">
+        <Stack sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }}>
           {project.highlights.map((highlight) => (
             <TechChip key={highlight} label={highlight} variant="primary" />
           ))}
         </Stack>
 
-        <Stack
-          direction="row"
-          flexWrap="wrap"
-          gap="6px"
-          className="project-card__tags"
-        >
+        <Stack sx={{ direction: 'row', flexWrap: 'wrap', gap: '6px' }} className="project-card__tags">
           {project.tags.map((tag) => (
             <TechChip key={tag} label={tag} variant="mono" />
           ))}
         </Stack>
 
         {project.link && (
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className="project-card__link"
-          >
+          <a href={project.link} target="_blank" rel="noreferrer" className="project-card__link">
             View Live ↗
           </a>
         )}
